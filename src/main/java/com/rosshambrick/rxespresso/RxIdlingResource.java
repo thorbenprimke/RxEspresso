@@ -124,8 +124,6 @@ public final class RxIdlingResource extends RxJavaObservableExecutionHook implem
                 });
             }
         };
-
-        return onSubscribe;
     }
 
     private <T> void onFinally(Observable.OnSubscribe<T> onSubscribe, final String finalizeCaller) {
